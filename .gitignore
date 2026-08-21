@@ -1,0 +1,19 @@
+# Secrets and local configuration
+.env*
+!.env.example
+*.pem
+
+# Disposable workspace state
+tmp/
+output/
+.codex-log/
+session-handoff-*.md
+*.log
+
+# Nested application dependencies and build output
+pf-nikal/node_modules/
+pf-nikal/.next/
+pf-nikal/.vinext/
+pf-nikal/dist/
+pf-nikal/.wrangler/
+pf-nikal/coverage/

@@ -1,0 +1,7 @@
+interface:
+  display_name: "Prepare hackathon submission"
+  short_description: "Verify the demo, video, write-up, and Q&A"
+  default_prompt: "Use $prepare-hackathon-submission to prepare and verify the demo, video, write-up, public links, and judge Q&A."
+
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,7 @@
+interface:
+  display_name: "Diagnosing bugs"
+  short_description: "Diagnose difficult bugs with falsifiable tests"
+  default_prompt: "Use $diagnosing-bugs to reproduce and isolate this failure before fixing it."
+
+policy:
+  allow_implicit_invocation: true

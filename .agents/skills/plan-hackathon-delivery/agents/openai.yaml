@@ -1,0 +1,7 @@
+interface:
+  display_name: "Plan hackathon delivery"
+  short_description: "Scope and sequence a judgeable hackathon build"
+  default_prompt: "Use $plan-hackathon-delivery to turn the current project state into a scoped, deadline-aware delivery plan."
+
+policy:
+  allow_implicit_invocation: true

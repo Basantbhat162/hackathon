@@ -1,0 +1,7 @@
+interface:
+  display_name: "Blast radius"
+  short_description: "Prove safety before risky or broad changes"
+  default_prompt: "Use $blast-radius to assess this change and prove its most important safety claim."
+
+policy:
+  allow_implicit_invocation: false

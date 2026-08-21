@@ -1,0 +1,7 @@
+interface:
+  display_name: "Validate hackathon idea"
+  short_description: "Gate and score hackathon ideas with evidence"
+  default_prompt: "Use $validate-hackathon-idea to evaluate this project idea against the official rules."
+
+policy:
+  allow_implicit_invocation: true

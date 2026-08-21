@@ -1,0 +1,7 @@
+interface:
+  display_name: "Grill a decision"
+  short_description: "Challenge plans until assumptions are explicit"
+  default_prompt: "Use $grill-decision to challenge this plan before implementation."
+
+policy:
+  allow_implicit_invocation: false

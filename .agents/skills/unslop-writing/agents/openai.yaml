@@ -1,0 +1,7 @@
+interface:
+  display_name: "Unslop writing"
+  short_description: "Remove AI writing tells without flattening tone"
+  default_prompt: "Use $unslop-writing to rewrite this text in plain, natural language."
+
+policy:
+  allow_implicit_invocation: false

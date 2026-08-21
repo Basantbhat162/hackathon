@@ -1,0 +1,7 @@
+interface:
+  display_name: "Test-driven development"
+  short_description: "Drive core behavior through test-first slices"
+  default_prompt: "Use $tdd to implement this behavior through a failing test and minimal fix."
+
+policy:
+  allow_implicit_invocation: true
