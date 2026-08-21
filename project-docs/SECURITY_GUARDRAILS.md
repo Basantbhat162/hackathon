@@ -33,6 +33,8 @@ Ordinary reads, tests, builds, normal Git pushes, regular source edits, and clea
 
 Codex requires project hooks to be reviewed and trusted. In Codex, open `/hooks`, review the project `PreToolUse` entry, and trust the exact configuration hash. Do not use a hook-trust bypass. A new task or app restart may be required after first installation.
 
+Activation status: Basant reported on 21 August 2026 that `/hooks` showed all three installed `PreToolUse` hooks active and the project entry checked with matcher `^(Bash|apply_patch)$` from `~\Downloads\ChatGPT india hackathon\.codex\hooks.json`.
+
 Trust is hash-based. Changing `.codex/hooks.json` invalidates the earlier trust decision. Changing the guard script without updating its SHA-256 value in `.codex/hooks.json` causes the launcher to deny the tool call with `INTEGRITY001`.
 
 ## Verification

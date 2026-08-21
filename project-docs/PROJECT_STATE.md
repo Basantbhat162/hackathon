@@ -21,7 +21,7 @@ Current verdict: `HOLD`.
 - Project documentation, source authority, compliance, research decisions, contribution rights, and Codex usage have established owners in this folder.
 - Agent instructions now use a concise `AGENTS.md` plus task-triggered repository skills under `../.agents/skills/`.
 - The workspace root is the single Git repository for code, documentation, research, and guardrails; `main` is backed up to `https://github.com/Basantbhat162/hackathon.git`.
-- A project-local `PreToolUse` guard blocks known destructive workspace, Git, disk, remote-execution, credential, and patch operations. It is tested defense in depth, not a replacement for sandboxing.
+- A project-local `PreToolUse` guard blocks known destructive workspace, Git, disk, remote-execution, credential, and patch operations. On 21 August 2026, Basant verified in `/hooks` that the project matcher `^(Bash|apply_patch)$` was checked and active. It is tested defense in depth, not a replacement for sandboxing.
 - Session handoffs are temporary navigation maps. Durable facts must be promoted according to `MEMORY_POLICY.md`.
 
 ## Completed material work

@@ -27,6 +27,7 @@ This log records material project changes. It does not record every session, pro
 - Updated agent rules and durable references so future work does not create loose root files or mix official authority with research.
 - Replaced the uncommitted nested application repository boundary with one Git repository at the workspace root, committed a baseline, and pushed `main` to the `hackathon` GitHub repository.
 - Kept sandboxing, approval policy, global hooks, credentials, and operating-system security settings unchanged.
+- Recorded Basant's `/hooks` verification that the project `PreToolUse` guard is trusted, checked, and active.
 
 ### Unchanged
 
