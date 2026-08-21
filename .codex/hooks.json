@@ -1,0 +1,18 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "^(Bash|apply_patch)$",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "printf '%s\\n' '{\"hookSpecificOutput\":{\"hookEventName\":\"PreToolUse\",\"permissionDecision\":\"deny\",\"permissionDecisionReason\":\"[PLATFORM001] This project guard currently requires Windows PowerShell.\"}}'; exit 2",
+            "commandWindows": "powershell.exe -NoProfile -NonInteractive -ExecutionPolicy Bypass -File \".agents/hooks/invoke-pre-tool-use-guard.ps1\" -ExpectedGuardHash \"e2fbdfe555347cd2482d0f15049bd9036b40807367f3b81e88fed923993c9cd5\"",
+            "timeout": 15,
+            "statusMessage": "Checking the command against PF Nikal workspace guardrails"
+          }
+        ]
+      }
+    ]
+  }
+}

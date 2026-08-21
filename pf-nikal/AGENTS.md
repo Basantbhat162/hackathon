@@ -1,6 +1,6 @@
 # PF Nikal application rules
 
-This Git repository sits inside the wider PF Nikal hackathon workspace.
+This application directory is tracked by the Git repository at the PF Nikal hackathon workspace root.
 
 Before application work, read and follow:
 
@@ -8,7 +8,7 @@ Before application work, read and follow:
 2. `../project-docs/PROJECT_STATE.md`
 3. `../project-docs/PROJECT_COMPLIANCE.md` when behavior, data, integrations, or submission claims are affected
 
-Project-local skills live at `../.agents/skills/`. A Codex session launched from this nested Git root may not discover skills above the repository boundary automatically, so read only the relevant `SKILL.md` when the outer rules route the task to one.
+Project-local skills live at `../.agents/skills/`. Read only the relevant `SKILL.md` when the root rules route the task to one. Project-local tool guardrails live at `../.codex/` and `../.agents/hooks/`.
 
 ## Application checks
 

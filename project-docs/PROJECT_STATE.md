@@ -20,6 +20,8 @@ Current verdict: `HOLD`.
 - The application code lives in `../pf-nikal/` and is currently a vinext starter rather than the completed PF Nikal journey.
 - Project documentation, source authority, compliance, research decisions, contribution rights, and Codex usage have established owners in this folder.
 - Agent instructions now use a concise `AGENTS.md` plus task-triggered repository skills under `../.agents/skills/`.
+- The workspace root is the single Git repository for code, documentation, research, and guardrails; `main` is backed up to `https://github.com/Basantbhat162/hackathon.git`.
+- A project-local `PreToolUse` guard blocks known destructive workspace, Git, disk, remote-execution, credential, and patch operations. It is tested defense in depth, not a replacement for sandboxing.
 - Session handoffs are temporary navigation maps. Durable facts must be promoted according to `MEMORY_POLICY.md`.
 
 ## Completed material work
@@ -29,12 +31,12 @@ Current verdict: `HOLD`.
 - Selected the narrowed Form 19 problem for prototyping, subject to the lived-problem gate.
 - Created the initial vinext application workspace and verification commands.
 - Established the layered project memory, changelog, roadmap, and repository-scoped skill set.
+- Consolidated the workspace into one Git history, created and pushed a verified baseline, and added tested project-local security guardrails.
 
 ## Active blockers and open decisions
 
 - `Q-001`: Gaurav must provide redacted evidence that he personally handled the specific Form 19 rejection journey.
 - The mandatory working-prototype, meaningful-Codex-use, safe-data, licensing, delivery, named-user, and honest-disclosure checks remain unresolved until implementation and review provide evidence.
-- The outer documentation workspace is not inside the `pf-nikal` Git repository. Durable documentation does not currently share the code repository's history.
 
 ## Next actions
 

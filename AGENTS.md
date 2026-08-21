@@ -2,7 +2,7 @@
 
 ## Scope and startup
 
-This is the PF Nikal Build What Moves India workspace. The application code is in `pf-nikal/`; durable project memory is in `project-docs/`; task-triggered workflows are in `.agents/skills/`.
+This is the PF Nikal Build What Moves India workspace. The application code is in `pf-nikal/`; durable project memory is in `project-docs/`; project hooks are in `.codex/` and `.agents/hooks/`; task-triggered workflows are in `.agents/skills/`.
 
 Before material project work:
 
@@ -13,7 +13,7 @@ Before material project work:
 
 ## Workspace placement
 
-- Keep the workspace root limited to entry points and lifecycle folders: `AGENTS.md`, `README.md`, `.agents/`, `project-docs/`, `pf-nikal/`, `reference/`, `research/`, `output/`, and `tmp/`.
+- Keep the workspace root limited to repository controls, entry points, and lifecycle folders: `.gitattributes`, `.gitignore`, `AGENTS.md`, `README.md`, `.codex/`, `.agents/`, `project-docs/`, `pf-nikal/`, `reference/`, `research/`, `output/`, and `tmp/`.
 - Before creating or moving a file, use the root `README.md` and the nearest folder `README.md` to choose its owner. Do not create loose root notes or catch-all folders such as `misc`, `new`, or `My researches`.
 - Put supplied hackathon authority in `reference/official-hackathon/`; do not mix it with commentary or research.
 - Put reusable workspace-design references in `reference/workspace-design/`, research procedures and raw tool results in `research/workflows/`, team-supplied working material in `research/team/`, and unpromoted outside material in `research/external/`.
@@ -47,6 +47,13 @@ Before material project work:
 - In `pf-nikal/`, use the commands documented in its `README.md` and `package.json`. Run focused checks first, then proportionate broader checks.
 - Use `$diagnosing-bugs` for difficult or uncertain failures and `$tdd` when its test-first trigger matches.
 - `$blast-radius` and `$grill-decision` are explicit-only workflows. Do not invoke them automatically.
+
+## Workspace guardrails
+
+- Follow `project-docs/SECURITY_GUARDRAILS.md`. Do not edit, disable, bypass, or weaken `.codex/hooks.json` or `.agents/hooks/` unless the user explicitly requests a guardrail change.
+- Keep recursive cleanup inside `tmp/` or `output/`. Use narrow, literal paths and inspect the target first.
+- Use reviewable Git commits for rollback. Do not use hard reset, destructive clean, broad restore, force push, or remote branch deletion as routine recovery.
+- After an intentional guardrail change, run both hook test suites, update the pinned guard hash, inspect the diff, and record the change in the established durable owners.
 
 ## Hackathon and data safety
 

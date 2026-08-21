@@ -11,6 +11,9 @@ This log records material project changes. It does not record every session, pro
 - Added model-invoked project skills for deadline-aware delivery planning and truthful submission preparation.
 - Added explicit invocation policies so expensive or interruptive reviews do not trigger during ordinary work.
 - Added indexed `reference/` and `research/` roots with explicit authority, lifecycle, and file-placement rules.
+- Added a project-local Codex `PreToolUse` guard, integrity launcher, pinned guard hash, denial log, and regression suites for destructive and ordinary tool requests.
+- Added deterministic Git line-ending rules for hook files so the pinned SHA-256 check survives Windows checkouts.
+- Added `SECURITY_GUARDRAILS.md` as the durable owner for hook trust, enforcement scope, verification, limitations, and Git recovery.
 
 ### Changed
 
@@ -22,6 +25,8 @@ This log records material project changes. It does not record every session, pro
 - Made `PROJECT_STATE.md` the compact current-truth owner and separated it from decisions, research evidence, plans, and history.
 - Moved supplied hackathon files into `reference/official-hackathon/`, workspace-design reports into `reference/workspace-design/`, and all research into `research/workflows/`, `research/team/`, or `research/external/`.
 - Updated agent rules and durable references so future work does not create loose root files or mix official authority with research.
+- Replaced the uncommitted nested application repository boundary with one Git repository at the workspace root, committed a baseline, and pushed `main` to the `hackathon` GitHub repository.
+- Kept sandboxing, approval policy, global hooks, credentials, and operating-system security settings unchanged.
 
 ### Unchanged
 

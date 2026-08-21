@@ -25,6 +25,7 @@ This folder is the durable project memory. Start with the current state, then op
 | Record Codex contribution | `CODEX_USAGE_LOG.md` |
 | Check team identity or ownership | `TEAM_AND_ROLES.md` |
 | Check assets, licenses, permissions, or outside work | `CONTRIBUTION_AND_RIGHTS_LOG.md` |
+| Review or change agent security guardrails and Git recovery | `SECURITY_GUARDRAILS.md`, `.codex/hooks.json`, and `../.agents/hooks/` |
 | Implement or verify the application | `../pf-nikal/`, its tests, and relevant project documents |
 
 ## Durable owners
@@ -38,6 +39,7 @@ This folder is the durable project memory. Start with the current state, then op
 - `CODEX_USAGE_LOG.md`: evidence of meaningful Codex use.
 - `TEAM_AND_ROLES.md`: team and outside-contributor identities.
 - `CONTRIBUTION_AND_RIGHTS_LOG.md`: rights, attribution, and permission record.
+- `SECURITY_GUARDRAILS.md`: project hook architecture, enforcement scope, limitations, tests, trust, and recovery procedure.
 
 ## Source authority
 
@@ -53,13 +55,14 @@ Only the first four levels can establish official hackathon rules. Team research
 
 ## Workspace boundaries
 
-- `../pf-nikal/` contains the code and its Git history.
+- The workspace root contains the single Git history; `../pf-nikal/` is the tracked application code within it.
 - `../reference/` contains supplied official hackathon material and non-authoritative workspace-design references, separated by subfolder.
 - `../research/workflows/` contains structured research procedures, prompts, and raw tool results.
 - `../research/team/` contains team inputs and working analysis; `../research/external/` contains outside commentary and unpromoted research.
 - `../output/` contains generated deliverables.
 - `../tmp/` contains disposable intermediates.
 - `../.agents/skills/` contains task-triggered project procedures.
+- `../.codex/` and `../.agents/hooks/` contain the project-local hook configuration and tested guard implementation.
 
 Generated, archived, vendored, temporary, and raw research material is non-authoritative unless a durable owner explicitly promotes a claim from it.
 

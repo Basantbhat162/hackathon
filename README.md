@@ -14,7 +14,10 @@ This workspace contains the Build What Moves India research, governance records,
 
 | Path | Purpose | Authority |
 |---|---|---|
+| `.gitattributes`, `.gitignore` | Deterministic hook bytes and exclusions for secrets, generated data, dependencies, and temporary output | Repository controls |
 | `AGENTS.md` | Concise operating rules and documentation routing for agents | Operational instructions |
+| `.codex/` | Trusted project-local Codex hook configuration | Runtime security control |
+| `.agents/hooks/` | Guard policy, integrity launcher, and regression tests | Security implementation |
 | `.agents/skills/` | Task-triggered project workflows | Procedural guidance when invoked |
 | `project-docs/` | Current state, decisions, evidence, compliance, ownership, and history | Durable project memory |
 | `pf-nikal/` | Application code and tests | Implementation truth |
@@ -27,6 +30,8 @@ This workspace contains the Build What Moves India research, governance records,
 
 | New material | Destination |
 |---|---|
+| Codex hook configuration | `.codex/` |
+| Project guard policy or its tests | `.agents/hooks/` |
 | Supplied official hackathon file | `reference/official-hackathon/` |
 | Workspace or agent-design reference | `reference/workspace-design/` |
 | Research procedure, prompt, or raw tool result | `research/workflows/` |
